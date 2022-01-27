@@ -1,0 +1,400 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{1738628E-CBE4-4C13-8977-BF9D2D1645DE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Proj</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="package-lock.json" />
+    <None Include="Proj.Api\.config\dotnet-tools.json" />
+    <None Include="Proj.Api\appsettings.Development.json" />
+    <None Include="Proj.Api\appsettings.json" />
+    <None Include="Proj.Api\bin\Debug\net5.0\appsettings.Development.json" />
+    <None Include="Proj.Api\bin\Debug\net5.0\appsettings.json" />
+    <None Include="Proj.Api\bin\Debug\net5.0\nlog.config" />
+    <None Include="Proj.Api\bin\Debug\net5.0\Proj.Api.deps.json" />
+    <None Include="Proj.Api\bin\Debug\net5.0\Proj.Api.runtimeconfig.dev.json" />
+    <None Include="Proj.Api\bin\Debug\net5.0\Proj.Api.runtimeconfig.json" />
+    <None Include="Proj.Api\bin\Release\net5.0\appsettings.Development.json" />
+    <None Include="Proj.Api\bin\Release\net5.0\appsettings.json" />
+    <None Include="Proj.Api\bin\Release\net5.0\nlog.config" />
+    <None Include="Proj.Api\bin\Release\net5.0\Proj.Api.deps.json" />
+    <None Include="Proj.Api\bin\Release\net5.0\Proj.Api.runtimeconfig.dev.json" />
+    <None Include="Proj.Api\bin\Release\net5.0\Proj.Api.runtimeconfig.json" />
+    <None Include="Proj.Api\nlog.config" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.assets.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.csproj.CopyComplete" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.genruntimeconfig.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\Proj.Api.RazorTargetAssemblyInfo.cache" />
+    <None Include="Proj.Api\obj\Debug\net5.0\staticwebassets\Proj.Api.StaticWebAssets.Manifest.cache" />
+    <None Include="Proj.Api\obj\Debug\netcoreapp3.1\Proj.Api.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Api\obj\Debug\netcoreapp3.1\Proj.Api.assets.cache" />
+    <None Include="Proj.Api\obj\Debug\netcoreapp3.1\Proj.Api.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Api\obj\Proj.Api.csproj.EntityFrameworkCore.targets" />
+    <None Include="Proj.Api\obj\Proj.Api.csproj.nuget.dgspec.json" />
+    <None Include="Proj.Api\obj\Proj.Api.csproj.nuget.g.props" />
+    <None Include="Proj.Api\obj\Proj.Api.csproj.nuget.g.targets" />
+    <None Include="Proj.Api\obj\project.assets.json" />
+    <None Include="Proj.Api\obj\project.nuget.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.assets.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.csproj.CopyComplete" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.deps.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.genruntimeconfig.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\Proj.Api.RazorTargetAssemblyInfo.cache" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\appsettings.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\appsettings.production.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\nlog.config" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Api.deps.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Api.runtimeconfig.json" />
+    <None Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\web.config" />
+    <None Include="Proj.Api\obj\Release\net5.0\staticwebassets\Proj.Api.StaticWebAssets.Manifest.cache" />
+    <None Include="Proj.Api\Proj.Api.csproj" />
+    <None Include="Proj.Api\Properties\launchSettings.json" />
+    <None Include="Proj.Api\Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Proj.Api\Properties\PublishProfiles\pd-contacts-api - Web Deploy.pubxml" />
+    <None Include="Proj.Api\Properties\PublishProfiles\pd-contacts-api - Web Deploy1.pubxml" />
+    <None Include="Proj.Api\Properties\serviceDependencies.json" />
+    <None Include="Proj.Api\Properties\serviceDependencies.pd-contacts-api - Web Deploy.json" />
+    <None Include="Proj.Api\Properties\serviceDependencies.pd-contacts-api - Web Deploy1.json" />
+    <None Include="Proj.Api\Properties\ServiceDependencies\pd-contacts-api - Web Deploy1\mssql1.arm.json" />
+    <None Include="Proj.Api\Properties\ServiceDependencies\pd-contacts-api - Web Deploy1\profile.arm.json" />
+    <None Include="Proj.Api\Properties\ServiceDependencies\pd-contacts-api - Web Deploy\mssql1.arm.json" />
+    <None Include="Proj.Api\Properties\ServiceDependencies\pd-contacts-api - Web Deploy\profile.arm.json" />
+    <None Include="Proj.Core\bin\Debug\net5.0\Proj.Core.deps.json" />
+    <None Include="Proj.Core\bin\Debug\net5.0\Proj.Core.runtimeconfig.dev.json" />
+    <None Include="Proj.Core\bin\Debug\net5.0\Proj.Core.runtimeconfig.json" />
+    <None Include="Proj.Core\bin\Release\net5.0\Proj.Core.deps.json" />
+    <None Include="Proj.Core\bin\Release\net5.0\Proj.Core.runtimeconfig.dev.json" />
+    <None Include="Proj.Core\bin\Release\net5.0\Proj.Core.runtimeconfig.json" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.assets.cache" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.csprojAssemblyReference.cache" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Core\obj\Debug\net5.0\Proj.Core.genruntimeconfig.cache" />
+    <None Include="Proj.Core\obj\Debug\netcoreapp3.1\Proj.Core.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Core\obj\Debug\netcoreapp3.1\Proj.Core.assets.cache" />
+    <None Include="Proj.Core\obj\Debug\netcoreapp3.1\Proj.Core.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Core\obj\Proj.Core.csproj.nuget.dgspec.json" />
+    <None Include="Proj.Core\obj\Proj.Core.csproj.nuget.g.props" />
+    <None Include="Proj.Core\obj\Proj.Core.csproj.nuget.g.targets" />
+    <None Include="Proj.Core\obj\project.assets.json" />
+    <None Include="Proj.Core\obj\project.nuget.cache" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.assets.cache" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Core\obj\Release\net5.0\Proj.Core.genruntimeconfig.cache" />
+    <None Include="Proj.Core\Proj.Core.csproj" />
+    <None Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Infrastructure.deps.json" />
+    <None Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Infrastructure.runtimeconfig.dev.json" />
+    <None Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Infrastructure.runtimeconfig.json" />
+    <None Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Infrastructure.deps.json" />
+    <None Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Infrastructure.runtimeconfig.dev.json" />
+    <None Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Infrastructure.runtimeconfig.json" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.assets.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.csproj.CopyComplete" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.csprojAssemblyReference.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.genruntimeconfig.cache" />
+    <None Include="Proj.Infrastructure\obj\Debug\netcoreapp3.1\Proj.Infrastructure.assets.cache" />
+    <None Include="Proj.Infrastructure\obj\Proj.Infrastructure.csproj.nuget.dgspec.json" />
+    <None Include="Proj.Infrastructure\obj\Proj.Infrastructure.csproj.nuget.g.props" />
+    <None Include="Proj.Infrastructure\obj\Proj.Infrastructure.csproj.nuget.g.targets" />
+    <None Include="Proj.Infrastructure\obj\project.assets.json" />
+    <None Include="Proj.Infrastructure\obj\project.nuget.cache" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.AssemblyInfoInputs.cache" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.assets.cache" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.csproj.AssemblyReference.cache" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.csproj.CopyComplete" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.csproj.CoreCompileInputs.cache" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.genruntimeconfig.cache" />
+    <None Include="Proj.Infrastructure\Proj.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Proj.Api\Controllers\ApiController.cs" />
+    <Compile Include="Proj.Api\Logger\CustomLogger.cs" />
+    <Compile Include="Proj.Api\Logger\ICustomLogger.cs" />
+    <Compile Include="Proj.Api\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Api\obj\Debug\net5.0\Proj.Api.AssemblyInfo.cs" />
+    <Compile Include="Proj.Api\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Api\obj\Debug\netcoreapp3.1\Proj.Api.AssemblyInfo.cs" />
+    <Compile Include="Proj.Api\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Api\obj\Release\net5.0\Proj.Api.AssemblyInfo.cs" />
+    <Compile Include="Proj.Api\Program.cs" />
+    <Compile Include="Proj.Api\Startup.cs" />
+    <Compile Include="Proj.Core\Domain\Address.cs" />
+    <Compile Include="Proj.Core\Domain\Contact.cs" />
+    <Compile Include="Proj.Core\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Core\obj\Debug\net5.0\Proj.Core.AssemblyInfo.cs" />
+    <Compile Include="Proj.Core\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Core\obj\Debug\netcoreapp3.1\Proj.Core.AssemblyInfo.cs" />
+    <Compile Include="Proj.Core\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Core\obj\Release\net5.0\Proj.Core.AssemblyInfo.cs" />
+    <Compile Include="Proj.Core\Repositories\IContactsRepository.cs" />
+    <Compile Include="Proj.Infrastructure\DataAccess\ContactsDbContext.cs" />
+    <Compile Include="Proj.Infrastructure\Migrations\20210826083538_Migration1.cs" />
+    <Compile Include="Proj.Infrastructure\Migrations\20210826083538_Migration1.Designer.cs">
+      <DependentUpon>20210826083538_Migration1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proj.Infrastructure\Migrations\20210901082535_mig2.cs" />
+    <Compile Include="Proj.Infrastructure\Migrations\20210901082535_mig2.Designer.cs">
+      <DependentUpon>20210901082535_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proj.Infrastructure\Migrations\20210921121547_mig1.cs" />
+    <Compile Include="Proj.Infrastructure\Migrations\20210921121547_mig1.Designer.cs">
+      <DependentUpon>20210921121547_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proj.Infrastructure\Migrations\ContactsDbContextModelSnapshot.cs" />
+    <Compile Include="Proj.Infrastructure\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.AssemblyInfo.cs" />
+    <Compile Include="Proj.Infrastructure\obj\Release\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.AssemblyInfo.cs" />
+    <Compile Include="Proj.Infrastructure\Repositories\ContactsRepository.cs" />
+    <Compile Include="Proj.Infrastructure\Service\ContactsService.cs" />
+    <Compile Include="Proj.Infrastructure\Service\IContactsService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Proj.Api\bin\Debug\net5.0\Humanizer.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.Identity.Client.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Newtonsoft.Json.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\NLog.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\NLog.Extensions.Logging.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\NLog.Web.AspNetCore.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Api.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Api.exe" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Api.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\ref\Proj.Api.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Humanizer.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.Identity.Client.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Newtonsoft.Json.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\NLog.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\NLog.Extensions.Logging.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\NLog.Web.AspNetCore.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Api.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Api.exe" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Api.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\ref\Proj.Api.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\apphost.exe" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\Proj.Api.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\Proj.Api.dll" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\Proj.Api.pdb" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\ref\Proj.Api.dll" />
+    <Content Include="Proj.Api\obj\Debug\net5.0\staticwebassets\Proj.Api.StaticWebAssets.xml" />
+    <Content Include="Proj.Api\obj\Release\net5.0\apphost.exe" />
+    <Content Include="Proj.Api\obj\Release\net5.0\Proj.Api.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Api\obj\Release\net5.0\Proj.Api.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\Proj.Api.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PublishOutputs.9ced7dfaab.txt" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.SqlServer.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.Identity.Client.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\NLog.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\NLog.Extensions.Logging.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\NLog.Web.AspNetCore.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Api.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Api.exe" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Api.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Core.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Core.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\System.Configuration.ConfigurationManager.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\System.Runtime.Caching.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Out\System.Security.Cryptography.ProtectedData.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Proj.Api.Parameters.xml" />
+    <Content Include="Proj.Api\obj\Release\net5.0\PubTmp\Proj.Api.SourceManifest.xml" />
+    <Content Include="Proj.Api\obj\Release\net5.0\ref\Proj.Api.dll" />
+    <Content Include="Proj.Api\obj\Release\net5.0\staticwebassets\Proj.Api.StaticWebAssets.xml" />
+    <Content Include="Proj.Api\Proj.Api.csproj.user" />
+    <Content Include="Proj.Api\Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <Content Include="Proj.Api\Properties\PublishProfiles\pd-contacts-api - Web Deploy.pubxml.user" />
+    <Content Include="Proj.Api\Properties\PublishProfiles\pd-contacts-api - Web Deploy1.pubxml.user" />
+    <Content Include="Proj.Api\Properties\serviceDependencies.pd-contacts-api - Web Deploy.json.user" />
+    <Content Include="Proj.Api\Properties\serviceDependencies.pd-contacts-api - Web Deploy1.json.user" />
+    <Content Include="Proj.Core\bin\Debug\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Core\bin\Debug\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Core\bin\Debug\net5.0\ref\Proj.Core.dll" />
+    <Content Include="Proj.Core\bin\Release\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Core\bin\Release\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Core\bin\Release\net5.0\ref\Proj.Core.dll" />
+    <Content Include="Proj.Core\obj\Debug\net5.0\Proj.Core.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Core\obj\Debug\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Core\obj\Debug\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Core\obj\Debug\net5.0\ref\Proj.Core.dll" />
+    <Content Include="Proj.Core\obj\Release\net5.0\Proj.Core.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Core\obj\Release\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Core\obj\Release\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Core\obj\Release\net5.0\ref\Proj.Core.dll" />
+    <Content Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\bin\Debug\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Infrastructure\bin\Debug\net5.0\ref\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Core.dll" />
+    <Content Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Core.pdb" />
+    <Content Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\bin\Release\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Infrastructure\bin\Release\net5.0\ref\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\obj\Debug\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Infrastructure\obj\Debug\net5.0\ref\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.csproj.FileListAbsolute.txt" />
+    <Content Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.dll" />
+    <Content Include="Proj.Infrastructure\obj\Release\net5.0\Proj.Infrastructure.pdb" />
+    <Content Include="Proj.Infrastructure\obj\Release\net5.0\ref\Proj.Infrastructure.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Proj.Api\bin\Debug\netcoreapp3.1\" />
+    <Folder Include="Proj.Core\bin\Debug\netcoreapp3.1\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
